@@ -62,12 +62,14 @@ body {
 .hero-content h1 {
     color: white;
     font-size: 3rem;
+    text-transform: capitalize !important;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
     font-size: 1.5rem;
+    text-align: center;
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.719);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -184,12 +186,8 @@ service_section {
     background-color: #007fa4;
 }
 
-.about-section .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+.about-section {
+   
 }
 
 .about-section .team-member {
@@ -243,11 +241,11 @@ service_section {
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 5rem;
     }
 }
 
@@ -315,7 +313,7 @@ service_section {
 
 /* About Section */
 .about-section {
-    padding: 100px 20px;
+    padding: 100px 0px;
     color: #ffffff;
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.495), rgba(0, 0, 0, 0.537)),
         url('https://img.freepik.com/free-vector/gradient-style-network-connection-background_23-2148879891.jpg?uid=R179916636&ga=GA1.1.684641021.1712509194&semt=ais_hybrid') no-repeat center center/cover;
@@ -323,7 +321,7 @@ service_section {
 }
 
 .about-content {
-    max-width: 800px;
+    width: 100% !important;
     margin: 0 auto 50px;
 }
 
@@ -493,6 +491,10 @@ service_section {
     .services-grid {
         grid-template-columns: 1fr;
     }
+    .about-section p{
+        font-size: 1.1rem;
+    }
+    
 }
 
 /* Technologies Section */
